@@ -77,6 +77,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             <Img
               src="https://zenodo.org/api/iiif/record:15309047:1-0040%20Research%20Data%20Management%20Framework%20Policy.pdf/pct:0,5,100,40/%5E1200,/0/default.jpg"
               width="100%"
+              className="rounded-lg"
             />
           </Section>
 
