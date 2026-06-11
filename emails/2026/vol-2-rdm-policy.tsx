@@ -49,18 +49,18 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
 
               <Column className="text-right">
                 <Link
-                  className="text-white [text-decoration:none]"
-                  href="https://www.tue.nl/en/our-university/library/library-for-researchers-and-phds/research-data-management"
+                  className="text-white [text-decoration:none] line-clamp-1"
+                  href="https://rdm.tue.nl/"
                 >
-                  Web
+                  RDM Handbook
                 </Link>
               </Column>
-              <Column className="text-right pl-4">
+              <Column className="text-right">
                 <Link
                   className="text-white [text-decoration:none] line-clamp-1"
                   href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx"
                 >
-                  Intranet
+                  SharePoint
                 </Link>
               </Column>
             </Row>
@@ -248,11 +248,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             <Link href="https://openpar.pages.tue.nl/solution-searcher/index.html">
               Solution Searcher
             </Link>{" "}
-            |{" "}
-            <Link href="https://rdm.tue.nl/">
-              RDM Handbook
-            </Link>{" "}
-            |{" "}
+            | <Link href="https://rdm.tue.nl/">RDM Handbook</Link> |{" "}
             <Link href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx">
               Intranet
             </Link>{" "}
