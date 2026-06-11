@@ -249,8 +249,8 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               Solution Searcher
             </Link>{" "}
             |{" "}
-            <Link href="https://www.tue.nl/en/our-university/library/library-for-researchers-and-phds/research-data-management">
-              RDM TU/e Public Website
+            <Link href="https://rdm.tue.nl/">
+              RDM Handbook
             </Link>{" "}
             |{" "}
             <Link href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx">
