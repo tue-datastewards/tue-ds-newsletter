@@ -205,42 +205,37 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               </span>
               The Mere-Exposure Effect
             </Heading>
-            <Row>
-              <Column className="w-1/2 align-top">
-                <Text>
-                  Did you know that simply seeing something repeatedly makes you
-                  like it more, even if you don&apos;t realize it? Psychologists
-                  call this phenomenon the &ldquo;mere-exposure effect&rdquo;.
-                  This is one reason why advertisers repeat their messages.
-                </Text>
-                <Text>
-                  The effect highlights the power of the environment on us.
-                  Feeling a bit helpless? We can curate what we surround
-                  ourselves with to influence our preferences. Do you have
-                  something that you don&apos;t enjoy but want to do for the
-                  greater good? Perhaps you find making data FAIR challenging,
-                  but you want to do so for open science? You can surround
-                  yourself with things that you&apos;d like to overcome and let
-                  familiarity do its work. Keep the RDM Handbook on your desk,
-                  join the DataBites session, or sign up for FAIR Data Clinics.
-                  Let&apos;s design our environment to conquer our own
-                  resistance.
-                </Text>
-                <Text>Nami (social psychology)</Text>
-              </Column>
-              <Column className="w-1/2 text-center align-top">
-                <Img
-                  className="w-full object-cover rounded-lg my-4"
-                  height={250}
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg/960px-Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg"
-                />
-                <Text className="text-xs text-gray-300">
-                  Andy Warhol&apos;s Campbell&apos;s Soup Cans paintings
-                  displayed at the Museum of Modern Art, photographed by Brandon
-                  Fick, 12 May 2006. Source: Flickr. Licensed under CC BY 2.0.
-                </Text>
-              </Column>
-            </Row>
+            <Section className="text-center">
+              <Img
+                className="w-full object-cover rounded-lg my-4"
+                height={250}
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg/960px-Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg"
+              />
+              <Text className="text-xs text-gray-300">
+                Andy Warhol&apos;s Campbell&apos;s Soup Cans paintings
+                displayed at the Museum of Modern Art, photographed by Brandon
+                Fick, 12 May 2006. Source: Flickr. Licensed under CC BY 2.0.
+              </Text>
+            </Section>
+            <Text>
+              Did you know that simply seeing something repeatedly makes you
+              like it more, even if you don&apos;t realize it? Psychologists
+              call this phenomenon the &ldquo;mere-exposure effect&rdquo;.
+              This is one reason why advertisers repeat their messages.
+            </Text>
+            <Text>
+              The effect highlights the power of the environment on us. Feeling
+              a bit helpless? We can curate what we surround ourselves with to
+              influence our preferences. Do you have something that you
+              don&apos;t enjoy but want to do for the greater good? Perhaps you
+              find making data FAIR challenging, but you want to do so for open
+              science? You can surround yourself with things that you&apos;d
+              like to overcome and let familiarity do its work. Keep the RDM
+              Handbook on your desk, join the DataBites session, or sign up for
+              FAIR Data Clinics. Let&apos;s design our environment to conquer
+              our own resistance.
+            </Text>
+            <Text>Nami (social psychology)</Text>
           </Section>
         </Container>
         <Container className="my-4">
