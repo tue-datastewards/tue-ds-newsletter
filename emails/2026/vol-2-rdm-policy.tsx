@@ -14,25 +14,25 @@ import {
   Section,
   Tailwind,
   Text,
-} from "@react-email/components"
-import * as React from "react"
-import { dataStewards } from "../../data/dataStewards"
-import { createTable } from "../../lib/createTable"
+} from "@react-email/components";
+import * as React from "react";
+import { dataStewards } from "../../data/dataStewards";
+import { createTable } from "../../lib/createTable";
 
 const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
-  : ""
+  : "";
 
 type NewsletterEmailProps = {
-  unsubscribeUrl: string
-}
+  unsubscribeUrl: string;
+};
 
 export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
   <Tailwind>
     <Html className="font-sans">
       <Head />
       <Preview>Research Data Stewards Newsletter Vol. 2</Preview>
-      <Body>
+      <Body className="bg-gray-100">
         <Container>
           <Section className="bg-fuchsia-800 text-sm px-4 py-[20px]">
             <Row>
@@ -95,12 +95,14 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               You can read the policy and the one-pager of{" "}
               <i>What does this policy mean to me</i> on this page:
             </Text>
-            <Button
-              className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-full my-4"
-              href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/RDM-Policy.aspx"
-            >
-              Read the RDM Policy
-            </Button>
+            <Section className="text-center">
+              <Button
+                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/RDM-Policy.aspx"
+              >
+                Read the RDM Policy
+              </Button>
+            </Section>
           </Section>
 
           <Section>
@@ -111,9 +113,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               can find templates for your Data Management Plan, Ethical
               Application, Data sharing agreements, and much more.
             </Text>
-            <Text>
-              In this newsletter, we would like to highlight:
-            </Text>
+            <Text>In this newsletter, we would like to highlight:</Text>
             <Heading as="h3" className="text-lg">
               RAPS: Research Archival Packaging Solution
             </Heading>
@@ -122,12 +122,14 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               accepted for publication in a scientific peer-reviewed journal.
               RAPS will preserve this research data for long term.
             </Text>
-            <Button
-              className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-full my-4"
-              href="https://cockpit.research.tue.nl/servicedesk/customer/portal/7"
-            >
-              Go to RAPS
-            </Button>
+            <Section className="text-center">
+              <Button
+                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                href="https://cockpit.research.tue.nl/servicedesk/customer/portal/7"
+              >
+                Go to RAPS
+              </Button>
+            </Section>
           </Section>
 
           <Section>
@@ -137,15 +139,17 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               awareness on various topics related to Research Data Management.
               Each session features a quick 15-minute talk or demo, followed by
               a 15-minute chat, focusing on one specific RDM topic. From RDM
-              essentials, FAIR principles, documentation, versioning, storage
-              to preparing data for publishing (to name just a few).
+              essentials, FAIR principles, documentation, versioning, storage to
+              preparing data for publishing (to name just a few).
             </Text>
-            <Button
-              className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-full my-4"
-              href="https://rdm.tue.nl/docs/learning-resources/data-bites/"
-            >
-              Join DataBites
-            </Button>
+            <Section className="text-center">
+              <Button
+                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                href="https://rdm.tue.nl/docs/learning-resources/data-bites/"
+              >
+                Join DataBites
+              </Button>
+            </Section>
           </Section>
 
           <Section>
@@ -158,15 +162,17 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             <Text>
               Join our monthly FAIR Data Clinic: a practical working session
               where we look at one of your research output and identify simple,
-              concrete steps to make it more Findable, Accessible,
-              Interoperable and Reusable.
+              concrete steps to make it more Findable, Accessible, Interoperable
+              and Reusable.
             </Text>
-            <Button
-              className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-full my-4"
-              href="https://rdm.tue.nl/docs/learning-resources/fair-clinic/"
-            >
-              Sign up for FAIR Data Clinic
-            </Button>
+            <Section className="text-center">
+              <Button
+                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                href="https://rdm.tue.nl/docs/learning-resources/fair-clinic/"
+              >
+                Sign up for FAIR Data Clinic
+              </Button>
+            </Section>
           </Section>
 
           <Section>
@@ -181,12 +187,14 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               improving the way we conduct open science at the Eindhoven
               University of Technology and to help others do the same.
             </Text>
-            <Button
-              className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-full my-4"
-              href="https://osceindhoven.nl"
-            >
-              Learn more about OSC Eindhoven
-            </Button>
+            <Section className="text-center">
+              <Button
+                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                href="https://osceindhoven.nl"
+              >
+                Learn more about OSC Eindhoven
+              </Button>
+            </Section>
           </Section>
 
           <Section>
@@ -273,6 +281,6 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
       </Body>
     </Html>
   </Tailwind>
-)
+);
 
-export default NewsletterEmail
+export default NewsletterEmail;
