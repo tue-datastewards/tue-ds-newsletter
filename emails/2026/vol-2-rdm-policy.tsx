@@ -223,9 +223,10 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               don&apos;t enjoy but want to do for the greater good? Perhaps you
               find making data FAIR challenging, but you want to do so for open
               science? You can surround yourself with things that you&apos;d
-              like to overcome and let familiarity do its work. Keep the RDM
-              Handbook on your desk, join the DataBites session, or sign up for
-              FAIR Data Clinics. Let&apos;s design our environment to conquer
+              like to overcome and let familiarity do its work.               Keep the{" "}
+              <Link className="text-[#742459] font-bold" href="https://rdm.tue.nl/">RDM Handbook</Link> on your desk, join the{" "}
+              <Link className="text-[#742459] font-bold" href="https://rdm.tue.nl/docs/learning-resources/data-bites/">DataBites session</Link>, or sign up for{" "}
+              <Link className="text-[#742459] font-bold" href="https://rdm.tue.nl/docs/learning-resources/fair-clinic/">FAIR Data Clinics</Link>. Let&apos;s design our environment to conquer
               our own resistance.
             </Text>
             <Text>Nami (social psychology)</Text>
