@@ -85,15 +85,21 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               support staff regarding the management of research data.
             </Text>
             <Text>
-              You can read the policy and the one-pager of{" "}
-              <i>What does this policy mean to me</i> on this page:
+              You can learn more about the policy and what it means to you on
+              our{" "}
+              <Link
+                href="https://rdm.tue.nl/docs/intro/tue-policy/"
+                className="text-[#742459]"
+              >
+                RDM Handbook page:
+              </Link>
             </Text>
             <Section className="text-center">
               <Button
                 className="bg-[#742459] text-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
-                href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/RDM-Policy.aspx"
+                href="https://rdm.tue.nl/docs/intro/tue-policy/"
               >
-                Read the RDM Policy
+                Learn more about the RDM Policy
               </Button>
             </Section>
           </Section>
