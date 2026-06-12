@@ -32,7 +32,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
     <Html className="font-sans">
       <Head />
       <Preview>Research Data Stewards Newsletter Vol. 2</Preview>
-      <Body className="bg-gray-100">
+      <Body className="bg-[#313846]">
         <Container>
           <Section className="bg-[#742459]/90 text-white px-4 py-[20px]">
             <Row>
@@ -58,7 +58,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Row>
           </Section>
         </Container>
-        <Container className="text-[#121212] px-3">
+        <Container className="bg-white text-[#121212] px-3">
           <Section className="text-center pt-[20px] pb-[20px]">
             <Heading className="mt-0 mb-[25px]">
               RDM Policy, DataBites,
