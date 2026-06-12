@@ -159,6 +159,14 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               and Reusable.
             </Text>
             <Section className="text-center">
+              <Link href="https://rdm.tue.nl/docs/learning-resources/fair-clinic/">
+                <Img
+                  src={`${baseUrl}/static/fair-clinic.png`}
+                  width={400}
+                  alt="FAIR Clinic"
+                  className="mx-auto my-4 rounded-lg"
+                />
+              </Link>
               <Button
                 className="bg-[#742459] text-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
                 href="https://rdm.tue.nl/docs/learning-resources/fair-clinic/"
