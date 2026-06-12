@@ -34,10 +34,10 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
       <Preview>Research Data Stewards Newsletter Vol. 2</Preview>
       <Body className="bg-gray-100">
         <Container>
-          <Section className="bg-white text-[#121212] text-sm px-4 py-[20px]">
+          <Section className="bg-white text-[#121212] px-4 py-[20px]">
             <Row>
-              <Column>
-                <Link href="https://www.tue.nl/en/our-university/library/library-for-researchers-and-phds/research-data-management">
+              <Column width="41">
+                <Link href="https://rdm.tue.nl/">
                   <Img
                     src={`https://rdm.tue.nl/img/logo.svg`}
                     height={41}
@@ -45,31 +45,20 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
                   />
                 </Link>
               </Column>
-              <Column className="text-right">
-                <Link
-                  className="[text-decoration:none] line-clamp-1"
-                  href="https://rdm.tue.nl/"
-                >
-                  RDM Handbook
+              <Column className="pl-2">
+                <Link className="text-black" href="https://rdm.tue.nl/">
+                  <Text className="text-lg font-semibold">
+                    Research Data Stewards Newsletter
+                  </Text>
                 </Link>
               </Column>
-              <Column className="text-right">
-                <Link
-                  className="[text-decoration:none] line-clamp-1"
-                  href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx"
-                >
-                  SharePoint
-                </Link>
+              <Column>
+                <Text>Vol. 2</Text>
               </Column>
             </Row>
           </Section>
         </Container>
         <Container className="bg-white text-[#121212] px-3">
-          <Section>
-            <Heading className="text-center">
-              Research Data Stewards Newsletter
-            </Heading>
-          </Section>
           <Section className="text-center">
             <Heading>RDM Policy, DataBites, FAIR Clinic & more</Heading>
             <Img
