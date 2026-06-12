@@ -235,23 +235,23 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
           <Text className="text-center text-[#ff84d2]">
             <Link className="text-[#ff84d2]" href="https://rdm.tue.nl/">
               RDM Handbook
+            </Link>{" "}
+            <span className="text-gray-400">|</span>{" "}
+            <Link className="text-[#ff84d2]" href="https://openpar.pages.tue.nl/solution-searcher/index.html">
+              Solution Searcher
+            </Link>{" "}
+            <span className="text-gray-400">|</span>{" "}
+            <Link className="text-[#ff84d2]" href="https://zenodo.org/communities/tue_rdmsupport/records?q=&l=list&p=1&s=10&sort=newest">
+              Zenodo Community
             </Link>
           </Text>
           <Text className="text-center text-[#ff84d2]">
             <Link className="text-[#ff84d2]" href="https://tue.atlassian.net/helpcenter/research/">
               Research Cockpit
             </Link>{" "}
-            |{" "}
-            <Link className="text-[#ff84d2]" href="https://openpar.pages.tue.nl/solution-searcher/index.html">
-              Solution Searcher
-            </Link>{" "}
-            |{" "}
+            <span className="text-gray-400">|</span>{" "}
             <Link className="text-[#ff84d2]" href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx">
               Intranet
-            </Link>{" "}
-            |{" "}
-            <Link className="text-[#ff84d2]" href="https://zenodo.org/communities/tue_rdmsupport/records?q=&l=list&p=1&s=10&sort=newest">
-              Zenodo Community
             </Link>
           </Text>
           <Text className="text-center text-gray-200">
@@ -262,7 +262,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             <Link className="text-[#ff84d2]" href="https://par.copernica.tue.nl/">
               Subscribe
             </Link>{" "}
-            |{" "}
+            <span className="text-gray-400">|</span>{" "}
             <Link className="text-[#ff84d2]" href={unsubscribeUrl || "{unsubscribe}"}>
               Unsubscribe
             </Link>
