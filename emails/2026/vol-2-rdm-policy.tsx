@@ -146,7 +146,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
           </Section>
 
           <Section>
-            <Heading as="h2">FAIR clinic</Heading>
+            <Heading as="h2">FAIR Data Clinic</Heading>
             <Text>Do you care about the quality of your research output?</Text>
             <Text>
               Do you want your research to have a higher impact and get more
@@ -239,11 +239,28 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               don&apos;t enjoy but want to do for the greater good? Perhaps you
               find making data FAIR challenging, but you want to do so for open
               science? You can surround yourself with things that you&apos;d
-              like to overcome and let familiarity do its work.               Keep the{" "}
-              <Link className="text-[#742459] font-bold" href="https://rdm.tue.nl/">RDM Handbook</Link> on your desk, join the{" "}
-              <Link className="text-[#742459] font-bold" href="https://rdm.tue.nl/docs/learning-resources/data-bites/">DataBites session</Link>, or sign up for{" "}
-              <Link className="text-[#742459] font-bold" href="https://rdm.tue.nl/docs/learning-resources/fair-clinic/">FAIR Data Clinics</Link>. Let&apos;s design our environment to conquer
-              our own resistance.
+              like to overcome and let familiarity do its work. Keep the{" "}
+              <Link
+                className="text-[#742459] font-bold"
+                href="https://rdm.tue.nl/"
+              >
+                RDM Handbook
+              </Link>{" "}
+              on your desk, join the{" "}
+              <Link
+                className="text-[#742459] font-bold"
+                href="https://rdm.tue.nl/docs/learning-resources/data-bites/"
+              >
+                DataBites session
+              </Link>
+              , or sign up for{" "}
+              <Link
+                className="text-[#742459] font-bold"
+                href="https://rdm.tue.nl/docs/learning-resources/fair-clinic/"
+              >
+                FAIR Data Clinics
+              </Link>
+              . Let&apos;s design our environment to conquer our own resistance.
             </Text>
             <Text>Nami (social psychology)</Text>
           </Section>
@@ -254,20 +271,32 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               RDM Handbook
             </Link>{" "}
             <span className="text-gray-400">|</span>{" "}
-            <Link className="text-[#ff84d2]" href="https://openpar.pages.tue.nl/solution-searcher/index.html">
+            <Link
+              className="text-[#ff84d2]"
+              href="https://openpar.pages.tue.nl/solution-searcher/index.html"
+            >
               Solution Searcher
             </Link>{" "}
             <span className="text-gray-400">|</span>{" "}
-            <Link className="text-[#ff84d2]" href="https://zenodo.org/communities/tue_rdmsupport/records?q=&l=list&p=1&s=10&sort=newest">
+            <Link
+              className="text-[#ff84d2]"
+              href="https://zenodo.org/communities/tue_rdmsupport/records?q=&l=list&p=1&s=10&sort=newest"
+            >
               Zenodo Community
             </Link>
           </Text>
           <Text className="text-center text-[#ff84d2]">
-            <Link className="text-[#ff84d2]" href="https://tue.atlassian.net/helpcenter/research/">
+            <Link
+              className="text-[#ff84d2]"
+              href="https://tue.atlassian.net/helpcenter/research/"
+            >
               Research Cockpit
             </Link>{" "}
             <span className="text-gray-400">|</span>{" "}
-            <Link className="text-[#ff84d2]" href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx">
+            <Link
+              className="text-[#ff84d2]"
+              href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx"
+            >
               Intranet
             </Link>
           </Text>
@@ -276,11 +305,17 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             Public Domain Dedication 🧡
           </Text>
           <Text className="text-center text-[#ff84d2]">
-            <Link className="text-[#ff84d2]" href="https://par.copernica.tue.nl/">
+            <Link
+              className="text-[#ff84d2]"
+              href="https://par.copernica.tue.nl/"
+            >
               Subscribe
             </Link>{" "}
             <span className="text-gray-400">|</span>{" "}
-            <Link className="text-[#ff84d2]" href={unsubscribeUrl || "{unsubscribe}"}>
+            <Link
+              className="text-[#ff84d2]"
+              href={unsubscribeUrl || "{unsubscribe}"}
+            >
               Unsubscribe
             </Link>
           </Text>
