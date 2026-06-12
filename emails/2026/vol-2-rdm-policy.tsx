@@ -34,22 +34,20 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
       <Preview>Research Data Stewards Newsletter Vol. 2</Preview>
       <Body className="bg-gray-100">
         <Container>
-          <Section className="bg-fuchsia-800 text-sm px-4 py-[20px]">
+          <Section className="bg-white text-primary-foreground text-sm px-4 py-[20px]">
             <Row>
               <Column>
                 <Link href="https://www.tue.nl/en/our-university/library/library-for-researchers-and-phds/research-data-management">
                   <Img
-                    src={`https://github.com/nsunami/tue-ds-newsletter/blob/7d2db72f3a20ed92ab69104ce3f669cfa6d6a2e7/emails/static/TUe-logo-descriptor-line-white.png?raw=true`}
-                    width={150}
+                    src={`https://rdm.tue.nl/img/logo.svg`}
                     height={41}
                     alt="TU/e Logo"
                   />
                 </Link>
               </Column>
-
               <Column className="text-right">
                 <Link
-                  className="text-white [text-decoration:none] line-clamp-1"
+                  className="[text-decoration:none] line-clamp-1"
                   href="https://rdm.tue.nl/"
                 >
                   RDM Handbook
@@ -57,7 +55,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               </Column>
               <Column className="text-right">
                 <Link
-                  className="text-white [text-decoration:none] line-clamp-1"
+                  className="[text-decoration:none] line-clamp-1"
                   href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx"
                 >
                   SharePoint
@@ -66,7 +64,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Row>
           </Section>
         </Container>
-        <Container className="bg-fuchsia-800 text-white px-3">
+        <Container className="bg-white text-primary-foreground px-3">
           <Section>
             <Heading className="text-center">
               Research Data Stewards Newsletter
@@ -98,7 +96,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Text>
             <Section className="text-center">
               <Button
-                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                className="bg-[#742459] text-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
                 href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/RDM-Policy.aspx"
               >
                 Read the RDM Policy
@@ -125,7 +123,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Text>
             <Section className="text-center">
               <Button
-                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                className="bg-[#742459] text-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
                 href="https://cockpit.research.tue.nl/servicedesk/customer/portal/7"
               >
                 Go to RAPS
@@ -145,7 +143,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Text>
             <Section className="text-center">
               <Button
-                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                className="bg-[#742459] text-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
                 href="https://rdm.tue.nl/docs/learning-resources/data-bites/"
               >
                 Join DataBites
@@ -168,7 +166,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Text>
             <Section className="text-center">
               <Button
-                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                className="bg-[#742459] text-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
                 href="https://rdm.tue.nl/docs/learning-resources/fair-clinic/"
               >
                 Sign up for FAIR Data Clinic
@@ -190,7 +188,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Text>
             <Section className="text-center">
               <Button
-                className="bg-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
+                className="bg-[#742459] text-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
                 href="https://osceindhoven.nl"
               >
                 Learn more about OSC Eindhoven
@@ -212,17 +210,17 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
                 height={250}
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg/960px-Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg"
               />
-              <Text className="text-xs text-gray-300">
-                Andy Warhol&apos;s Campbell&apos;s Soup Cans paintings
-                displayed at the Museum of Modern Art, photographed by Brandon
-                Fick, 12 May 2006. Source: Flickr. Licensed under CC BY 2.0.
+              <Text className="text-xs text-gray-500">
+                Andy Warhol&apos;s Campbell&apos;s Soup Cans paintings displayed
+                at the Museum of Modern Art, photographed by Brandon Fick, 12
+                May 2006. Source: Flickr. Licensed under CC BY 2.0.
               </Text>
             </Section>
             <Text>
               Did you know that simply seeing something repeatedly makes you
               like it more, even if you don&apos;t realize it? Psychologists
-              call this phenomenon the &ldquo;mere-exposure effect&rdquo;.
-              This is one reason why advertisers repeat their messages.
+              call this phenomenon the &ldquo;mere-exposure effect&rdquo;. This
+              is one reason why advertisers repeat their messages.
             </Text>
             <Text>
               The effect highlights the power of the environment on us. Feeling

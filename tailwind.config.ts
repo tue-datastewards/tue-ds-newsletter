@@ -57,10 +57,9 @@ export default {
     extend: {
       colors: {
         "primary-background": "#862369",
-        "primary-foreground": "white",
+        "primary-foreground": "#121212",
         "ds-purple": "#742459",
       },
-    },
     },
   },
 } as TailwindConfig;
