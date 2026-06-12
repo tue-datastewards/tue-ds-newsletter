@@ -233,6 +233,11 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
         </Container>
         <Container className="my-4">
           <Text className="text-center text-[#ff84d2]">
+            <Link className="text-[#ff84d2]" href="https://rdm.tue.nl/">
+              RDM Handbook
+            </Link>
+          </Text>
+          <Text className="text-center text-[#ff84d2]">
             <Link className="text-[#ff84d2]" href="https://tue.atlassian.net/helpcenter/research/">
               Research Cockpit
             </Link>{" "}
@@ -240,23 +245,27 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             <Link className="text-[#ff84d2]" href="https://openpar.pages.tue.nl/solution-searcher/index.html">
               Solution Searcher
             </Link>{" "}
-            | <Link className="text-[#ff84d2]" href="https://rdm.tue.nl/">RDM Handbook</Link> |{" "}
+            |{" "}
             <Link className="text-[#ff84d2]" href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx">
               Intranet
             </Link>{" "}
-            | <Link className="text-[#ff84d2]" href="https://par.copernica.tue.nl/">Subscribe</Link>
-          </Text>
-          <Section className="text-center">
+            |{" "}
             <Link className="text-[#ff84d2]" href="https://zenodo.org/communities/tue_rdmsupport/records?q=&l=list&p=1&s=10&sort=newest">
               Zenodo Community
             </Link>
-          </Section>
+          </Text>
           <Text className="text-center text-gray-200">
             CC0 No Rights Reserved <br />
             Public Domain Dedication 🧡
           </Text>
           <Text className="text-center text-[#ff84d2]">
-            <Link className="text-[#ff84d2]" href={unsubscribeUrl || "{unsubscribe}"}>Unsubscribe</Link>
+            <Link className="text-[#ff84d2]" href="https://par.copernica.tue.nl/">
+              Subscribe
+            </Link>{" "}
+            |{" "}
+            <Link className="text-[#ff84d2]" href={unsubscribeUrl || "{unsubscribe}"}>
+              Unsubscribe
+            </Link>
           </Text>
         </Container>
       </Body>
