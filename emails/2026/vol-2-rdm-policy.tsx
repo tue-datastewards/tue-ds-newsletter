@@ -34,7 +34,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
       <Preview>Research Data Stewards Newsletter Vol. 2</Preview>
       <Body className="bg-gray-100">
         <Container>
-          <Section className="bg-white text-[#121212] px-4 py-[20px]">
+          <Section className="bg-[#742459] text-white px-4 py-[20px]">
             <Row>
               <Column width="41">
                 <Link href="https://rdm.tue.nl/">
@@ -46,7 +46,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
                 </Link>
               </Column>
               <Column className="pl-2">
-                <Link className="text-black" href="https://rdm.tue.nl/">
+                <Link className="text-white" href="https://rdm.tue.nl/">
                   <Text className="text-lg font-semibold">
                     Research Data Stewards Newsletter
                   </Text>
@@ -58,16 +58,21 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Row>
           </Section>
         </Container>
-        <Container className="bg-white text-[#121212] px-3">
-          <Section className="text-center">
-            <Heading>RDM Policy, DataBites, FAIR Clinic & more</Heading>
+        <Container className="text-[#121212] px-3">
+          <Section className="text-center pt-[20px] pb-[20px]">
+            <Heading className="mt-0 mb-[25px]">
+              RDM Policy, DataBites,
+              <br />
+              FAIR Clinic & more
+            </Heading>
             <Img
               src="https://zenodo.org/api/iiif/record:15309047:1-0040%20Research%20Data%20Management%20Framework%20Policy.pdf/pct:0,5,100,40/%5E1200,/0/default.jpg"
               width="100%"
               className="rounded-lg"
             />
           </Section>
-
+        </Container>
+        <Container className="bg-white text-[#121212] px-3">
           <Section>
             <Heading as="h2">RDM Policy</Heading>
             <Text>
@@ -193,6 +198,12 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               </span>
               The Mere-Exposure Effect
             </Heading>
+            <Text className="bg-[#742459] text-white px-3 py-3">
+              Did you know that simply seeing something repeatedly makes you
+              like it more, even if you don&apos;t realize it? Psychologists
+              call this phenomenon the &ldquo;mere-exposure effect&rdquo;. This
+              is one reason why advertisers repeat their messages.
+            </Text>
             <Section className="text-center">
               <Img
                 className="w-full object-cover rounded-lg my-4"
@@ -205,12 +216,6 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
                 May 2006. Source: Flickr. Licensed under CC BY 2.0.
               </Text>
             </Section>
-            <Text>
-              Did you know that simply seeing something repeatedly makes you
-              like it more, even if you don&apos;t realize it? Psychologists
-              call this phenomenon the &ldquo;mere-exposure effect&rdquo;. This
-              is one reason why advertisers repeat their messages.
-            </Text>
             <Text>
               The effect highlights the power of the environment on us. Feeling
               a bit helpless? We can curate what we surround ourselves with to
