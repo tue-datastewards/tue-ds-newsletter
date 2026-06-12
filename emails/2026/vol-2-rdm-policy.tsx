@@ -181,9 +181,17 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               University of Technology and to help others do the same.
             </Text>
             <Section className="text-center">
+              <Link href="https://osceindhoven.nl/">
+                <Img
+                  src={`${baseUrl}/static/osc-eindhoven-logo.svg`}
+                  width={200}
+                  alt="Open Science Community Eindhoven logo"
+                  className="mx-auto my-4"
+                />
+              </Link>
               <Button
                 className="bg-[#742459] text-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
-                href="https://osceindhoven.nl"
+                href="https://osceindhoven.nl/"
               >
                 Learn more about OSC Eindhoven
               </Button>
