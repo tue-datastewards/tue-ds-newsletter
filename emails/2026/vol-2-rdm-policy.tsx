@@ -122,6 +122,14 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               RAPS will preserve this research data for long term.
             </Text>
             <Section className="text-center">
+              <Link href="https://cockpit.research.tue.nl/servicedesk/customer/portal/7">
+                <Img
+                  src={`${baseUrl}/static/RAPS.png`}
+                  width="100%"
+                  alt="RAPS"
+                  className="mx-auto my-4 rounded-lg"
+                />
+              </Link>
               <Button
                 className="bg-[#742459] text-white box-border rounded-md py-3 px-4 text-center font-semibold w-auto my-4"
                 href="https://cockpit.research.tue.nl/servicedesk/customer/portal/7"
