@@ -1,4 +1,4 @@
-import type { TailwindConfig } from "@react-email/tailwind"
+import type { TailwindConfig } from "@react-email/tailwind";
 
 export default {
   theme: {
@@ -58,7 +58,9 @@ export default {
       colors: {
         "primary-background": "#862369",
         "primary-foreground": "white",
+        "ds-purple": "#742459",
       },
     },
+    },
   },
-} as TailwindConfig
+} as TailwindConfig;
