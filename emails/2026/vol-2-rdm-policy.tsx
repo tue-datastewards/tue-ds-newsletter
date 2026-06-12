@@ -34,7 +34,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
       <Preview>Research Data Stewards Newsletter Vol. 2</Preview>
       <Body className="bg-[#313846]">
         <Container>
-          <Section className="bg-[#742459]/90 text-white px-4 py-[20px]">
+          <Section className="bg-[#823969] text-white px-4 py-[20px]">
             <Row>
               <Column width="41">
                 <Link href="https://rdm.tue.nl/">
