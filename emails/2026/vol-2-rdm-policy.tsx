@@ -232,34 +232,31 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
           </Section>
         </Container>
         <Container className="my-4">
-          <Text className="text-center text-gray-700">
-            <Link href="https://tue.atlassian.net/helpcenter/research/">
+          <Text className="text-center text-[#ff84d2]">
+            <Link className="text-[#ff84d2]" href="https://tue.atlassian.net/helpcenter/research/">
               Research Cockpit
             </Link>{" "}
             |{" "}
-            <Link href="https://openpar.pages.tue.nl/solution-searcher/index.html">
+            <Link className="text-[#ff84d2]" href="https://openpar.pages.tue.nl/solution-searcher/index.html">
               Solution Searcher
             </Link>{" "}
-            | <Link href="https://rdm.tue.nl/">RDM Handbook</Link> |{" "}
-            <Link href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx">
+            | <Link className="text-[#ff84d2]" href="https://rdm.tue.nl/">RDM Handbook</Link> |{" "}
+            <Link className="text-[#ff84d2]" href="https://tuenl.sharepoint.com/sites/intranet-LIS/SitePages/Data-stewards(1).aspx">
               Intranet
             </Link>{" "}
-            | <Link href="https://par.copernica.tue.nl/">Subscribe</Link>
+            | <Link className="text-[#ff84d2]" href="https://par.copernica.tue.nl/">Subscribe</Link>
           </Text>
           <Section className="text-center">
-            <Link href="https://zenodo.org/communities/tue_rdmsupport/records?q=&l=list&p=1&s=10&sort=newest">
-              <Img
-                className="mx-auto"
-                src="https://about.zenodo.org/static/img/logos/zenodo-black-200.png"
-              />
+            <Link className="text-[#ff84d2]" href="https://zenodo.org/communities/tue_rdmsupport/records?q=&l=list&p=1&s=10&sort=newest">
+              Zenodo Community
             </Link>
           </Section>
-          <Text className="text-center">
+          <Text className="text-center text-gray-200">
             CC0 No Rights Reserved <br />
             Public Domain Dedication 🧡
           </Text>
-          <Text className="text-center">
-            <Link href={unsubscribeUrl || "{unsubscribe}"}>Unsubscribe</Link>
+          <Text className="text-center text-[#ff84d2]">
+            <Link className="text-[#ff84d2]" href={unsubscribeUrl || "{unsubscribe}"}>Unsubscribe</Link>
           </Text>
         </Container>
       </Body>
