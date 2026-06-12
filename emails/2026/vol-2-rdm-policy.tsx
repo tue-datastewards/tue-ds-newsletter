@@ -34,7 +34,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
       <Preview>Research Data Stewards Newsletter Vol. 2</Preview>
       <Body className="bg-gray-100">
         <Container>
-          <Section className="bg-white text-primary-foreground text-sm px-4 py-[20px]">
+          <Section className="bg-white text-[#121212] text-sm px-4 py-[20px]">
             <Row>
               <Column>
                 <Link href="https://www.tue.nl/en/our-university/library/library-for-researchers-and-phds/research-data-management">
@@ -64,7 +64,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Row>
           </Section>
         </Container>
-        <Container className="bg-white text-primary-foreground px-3">
+        <Container className="bg-white text-[#121212] px-3">
           <Section>
             <Heading className="text-center">
               Research Data Stewards Newsletter

@@ -54,12 +54,6 @@ export default {
       80: "320px",
       96: "384px",
     },
-    extend: {
-      colors: {
-        "primary-background": "#862369",
-        "primary-foreground": "#121212",
-        "ds-purple": "#742459",
-      },
-    },
+    extend: {},
   },
 } as TailwindConfig;
