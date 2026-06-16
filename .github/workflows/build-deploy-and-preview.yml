@@ -34,10 +34,10 @@ jobs:
 
       - name: Build emails
         if: github.event.action != 'closed'
-        run: yarn export
+        run: yarn build
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./out/
+          source-dir: ./.react-email/.next/
           pages-base-url: "tue-datastewards.github.io/tue-ds-newsletter"
