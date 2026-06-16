@@ -39,5 +39,5 @@ jobs:
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./.react-email/.next/
+          source-dir: ./.react-email/.next/server/app/
           pages-base-url: "tue-datastewards.github.io/tue-ds-newsletter"
