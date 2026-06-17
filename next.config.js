@@ -4,7 +4,7 @@
 const nextConfig = {
   output: "export",
 
-  basePath: "/tue-ds-newsletter",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "/tue-ds-newsletter",
 
   images: {
     unoptimized: true,
