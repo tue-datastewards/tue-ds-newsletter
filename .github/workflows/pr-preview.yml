@@ -41,3 +41,16 @@ jobs:
         with:
           source-dir: ./out
           pages-base-url: "tue-datastewards.github.io/tue-ds-newsletter"
+
+      - name: Ensure .nojekyll at gh-pages root
+        if: github.event.action != 'closed'
+        run: mkdir -p /tmp/nojekyll && touch /tmp/nojekyll/.nojekyll
+
+      - name: Deploy .nojekyll
+        if: github.event.action != 'closed'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: /tmp/nojekyll
+          publish_branch: gh-pages
+          keep_files: true
