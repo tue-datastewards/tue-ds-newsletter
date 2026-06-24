@@ -3,4 +3,5 @@ node_modules/
 out/
 .next/
 public/emails/
+public/static/
 .react-email/

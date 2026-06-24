@@ -11,6 +11,13 @@ type EmailEntry = { slug: string; title: string };
 async function main() {
   fs.mkdirSync(outDir, { recursive: true });
 
+  const staticSrc = path.resolve(emailsDir, "static");
+  const staticDst = path.resolve(process.cwd(), "public/static");
+  if (fs.existsSync(staticSrc)) {
+    fs.cpSync(staticSrc, staticDst, { recursive: true });
+    console.log("  ✓ static assets copied");
+  }
+
   const emailFiles = scanEmails(emailsDir);
 
   const manifest: EmailEntry[] = [];
