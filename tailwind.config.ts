@@ -1,4 +1,4 @@
-import type { TailwindConfig } from "@react-email/tailwind"
+import type { TailwindConfig } from "@react-email/tailwind";
 
 export default {
   theme: {
@@ -54,11 +54,6 @@ export default {
       80: "320px",
       96: "384px",
     },
-    extend: {
-      colors: {
-        "primary-background": "#862369",
-        "primary-foreground": "white",
-      },
-    },
+    extend: {},
   },
-} as TailwindConfig
+} as TailwindConfig;
