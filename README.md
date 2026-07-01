@@ -73,4 +73,4 @@ via `NEXT_PUBLIC_BASE_PATH`.
 
 ## License
 
-[Unlicense license](https://unlicense.org/) for public domain dedication 🧡
+[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) — public domain dedication 🧡
