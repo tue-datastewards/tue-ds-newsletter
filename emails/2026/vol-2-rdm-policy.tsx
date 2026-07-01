@@ -173,13 +173,13 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               Do you care about your data having an impact beyond your papers?
             </Text>
             <Text>
-              Join our monthly FAIR Data Clinic: a practical session in which
-              we help you making your dataset ready for repository deposit.
+              Join our monthly FAIR Data Clinic: a practical session in which we
+              help you making your dataset ready for repository deposit.
             </Text>
             <Section className="text-center">
               <Link href="https://rdm.tue.nl/docs/learning-resources/fair-clinic/">
                 <Img
-                  src={`${baseUrl}/static/fair-clinic.png`}
+                  src={`https://rdm.tue.nl/assets/images/fair-clinic-3a2f86ded67e9d3449adb6e2856eef3d.jpg`}
                   width={"100%"}
                   alt="FAIR Clinic"
                   className="mx-auto my-4 rounded-lg"
