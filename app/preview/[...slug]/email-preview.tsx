@@ -21,14 +21,22 @@ const toAbsoluteUrls = (html: string): string => {
   return html.replace(/src="\/(?!\/)/g, `src="${origin}/`);
 };
 
+// Strip Outlook MSO conditional comments (e.g.
+// <!--[if mso]><i ...><!‌[endif]-->), which @react-email Button emits for
+// letter-spacing in Outlook. They are no-op HTML comments in browsers but
+// Copernica cannot handle them, so remove them from the copied source.
+const stripMsoComments = (html: string): string =>
+  html.replace(/<!--\[if mso\]>[\s\S]*?<!\[endif\]-->/g, "");
+
 export function EmailPreview({ html, title }: EmailPreviewProps) {
   const [mode, setMode] = useState<Mode>("preview");
   const [copied, setCopied] = useState(false);
 
-  // The iframe renders the original (root-relative) HTML, which resolves
-  // against the same origin on the deployed site. The source view + copy use
-  // absolute URLs so the markup is portable when pasted into an email client.
-  const sourceHtml = toAbsoluteUrls(html);
+  // The iframe renders the original HTML (root-relative, with MSO comments)
+  // as-is, since they're no-op in the browser. The source view + copy use a
+  // portable version: absolute image URLs and MSO comments stripped, so it
+  // pastes cleanly into email clients like Copernica.
+  const sourceHtml = stripMsoComments(toAbsoluteUrls(html));
 
   const copyHtml = async () => {
     try {
