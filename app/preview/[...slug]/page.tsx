@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { notFound } from "next/navigation";
+import { EmailPreview } from "./email-preview";
 
 type EmailEntry = { slug: string; title: string };
 
@@ -59,13 +60,5 @@ export default function PreviewPage({
 
   const html = fs.readFileSync(htmlPath, "utf-8");
 
-  return (
-    <div className="__preview-wrap">
-      <iframe
-        className="__preview-iframe"
-        srcDoc={html}
-        title={email.title}
-      />
-    </div>
-  );
+  return <EmailPreview html={html} title={email.title} />;
 }

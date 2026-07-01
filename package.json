@@ -6,7 +6,8 @@
     "dev": "EMAIL_DEV=1 email dev",
     "build:emails": "tsx scripts/build-emails.ts",
     "build": "yarn build:emails && next build",
-    "export": "email export"
+    "export": "email export",
+    "preview": "tsx scripts/preview.mjs"
   },
   "dependencies": {
     "@react-email/components": "0.0.25",
