@@ -41,7 +41,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
               href="{webversion}"
               className="text-[#9ca3af] text-xs"
             >
-              View the newsletter on your browser
+              View this newsletter on your browser
             </Link>
           </Section>
           <Section className="bg-[#823969] text-white px-4 py-[20px]">
