@@ -35,6 +35,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
       <Head />
       <Preview>Research Data Stewards Newsletter Vol. 2</Preview>
       <Body className="bg-[#313846]">
+        <Section className="bg-[#313846]">
         <Container>
           <Section className="text-center py-2">
             <Link
@@ -348,6 +349,7 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             </Link>
           </Text>
         </Container>
+        </Section>
       </Body>
     </Html>
   </Tailwind>
