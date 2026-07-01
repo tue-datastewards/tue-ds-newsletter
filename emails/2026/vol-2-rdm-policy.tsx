@@ -220,10 +220,10 @@ export const NewsletterEmail = ({ unsubscribeUrl }: NewsletterEmailProps) => (
             <Section className="text-center">
               <Link href="https://osceindhoven.nl/">
                 <Img
-                  src={`${baseUrl}/static/osc-eindhoven-logo.svg`}
+                  src={`${baseUrl}/static/osc-eindhoven-logo-white-bg.png`}
                   width={200}
                   alt="Open Science Community Eindhoven logo"
-                  className="mx-auto my-4 bg-white p-4 rounded-lg"
+                  className="mx-auto my-4"
                 />
               </Link>
               <Button
