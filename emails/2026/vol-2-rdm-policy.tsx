@@ -21,7 +21,9 @@ import { createTable } from "../../lib/createTable";
 
 const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
-  : process.env.NEXT_PUBLIC_BASE_PATH || "/tue-ds-newsletter";
+  : process.env.EMAIL_DEV
+    ? ""
+    : process.env.NEXT_PUBLIC_BASE_PATH || "/tue-ds-newsletter";
 
 type NewsletterEmailProps = {
   unsubscribeUrl: string;
