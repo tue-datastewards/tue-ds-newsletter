@@ -9,17 +9,34 @@ type EmailPreviewProps = {
 
 type Mode = "preview" | "source";
 
+// Rewrite root-relative image URLs (e.g. /tue-ds-newsletter/static/RAPS.png)
+// to absolute URLs against the current deployment origin, so the copied HTML
+// loads images from the GitHub Pages site in email clients like Copernica
+// (which can't resolve root-relative paths and would otherwise need images
+// attached). Leaves already-absolute (https://) and protocol-relative (//)
+// URLs untouched.
+const toAbsoluteUrls = (html: string): string => {
+  if (typeof window === "undefined") return html;
+  const origin = window.location.origin;
+  return html.replace(/src="\/(?!\/)/g, `src="${origin}/`);
+};
+
 export function EmailPreview({ html, title }: EmailPreviewProps) {
   const [mode, setMode] = useState<Mode>("preview");
   const [copied, setCopied] = useState(false);
 
+  // The iframe renders the original (root-relative) HTML, which resolves
+  // against the same origin on the deployed site. The source view + copy use
+  // absolute URLs so the markup is portable when pasted into an email client.
+  const sourceHtml = toAbsoluteUrls(html);
+
   const copyHtml = async () => {
     try {
-      await navigator.clipboard.writeText(html);
+      await navigator.clipboard.writeText(sourceHtml);
     } catch {
       // Fallback for browsers without the async clipboard API
       const ta = document.createElement("textarea");
-      ta.value = html;
+      ta.value = sourceHtml;
       ta.style.position = "fixed";
       ta.style.opacity = "0";
       document.body.appendChild(ta);
@@ -79,7 +96,7 @@ export function EmailPreview({ html, title }: EmailPreviewProps) {
         </div>
       ) : (
         <pre className="__email-source">
-          <code>{html}</code>
+          <code>{sourceHtml}</code>
         </pre>
       )}
     </div>
