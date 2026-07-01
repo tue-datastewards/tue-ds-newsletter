@@ -73,7 +73,8 @@ body {
 }
 
 .__preview-wrap {
-  height: 100%;
+  flex-grow: 1;
+  min-height: 0;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -92,4 +93,77 @@ body {
   justify-content: center;
   height: 100%;
   color: #4b5563;
+}
+
+.__email-preview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.__email-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #000;
+  border-bottom: 1px solid #1f2937;
+  flex-shrink: 0;
+}
+
+.__email-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.__email-tab {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 0;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.__email-tab:hover {
+  background: #111827;
+  color: #fff;
+}
+
+.__email-tab.active {
+  background: #1f2937;
+  color: #fff;
+}
+
+.__email-copy {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #1f2937;
+  background: #111827;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.__email-copy:hover {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.__email-source {
+  flex-grow: 1;
+  min-height: 0;
+  overflow: auto;
+  margin: 0;
+  padding: 16px;
+  background: #0a0a0a;
+  color: #e5e7eb;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre;
 }
