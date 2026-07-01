@@ -3,7 +3,7 @@
   "version": "0.0.34",
   "private": true,
   "scripts": {
-    "dev": "email dev",
+    "dev": "EMAIL_DEV=1 email dev",
     "build:emails": "tsx scripts/build-emails.ts",
     "build": "yarn build:emails && next build",
     "export": "email export"
